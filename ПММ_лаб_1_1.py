@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 dx = 0.02 #
 dt = 0.001 
@@ -37,13 +37,3 @@ for j in range(1, nt):
     T[0,j] = T[1,j]
     T[-1, j] = T[-2, j]
 
-# Вывод графика
-t = np.arange(0,tmax+dt,dt*1000).round(3)
-for j in range (100, nt, 1000):
-    plt.plot(x, T[:,j])
-
-plt.legend([f't = {value} с' for value in t])
-plt.xlabel('Расстояние')
-plt.ylabel('Температура')
-plt.grid(axis = 'both')
-plt.show()
