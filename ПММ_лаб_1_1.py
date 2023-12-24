@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 dx = 0.02 #
 dt = 0.001 
